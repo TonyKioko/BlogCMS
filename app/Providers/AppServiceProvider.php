@@ -2,9 +2,9 @@
 
 namespace App\Providers;
 
+use Illuminate\Routing\UrlGenerator;
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\Schema;
-
+use View;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,18 +13,39 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
+
+    public function boot(UrlGenerator $url)
     {
-        //
+        if(env('REDIRECT_HTTPS')) {
+            $url->formatScheme('https');
+        }
+
     }
 
     /**
-     * Bootstrap any application services.
+     * Register any application services.
      *
      * @return void
      */
-    public function boot()
-{
-    Schema::defaultStringLength(191);
-}
+    public function register()
+    {
+        if(env('REDIRECT_HTTPS')) {
+            $this->app['request']->server->set('HTTPS', true);
+        }
+    }
+
+    // public function register()
+    // {
+    //     //
+    // }
+
+    // /**
+    //  * Bootstrap any application services.
+    //  *
+    //  * @return void
+    //  */
+    // public function boot()
+    // {
+    //     // View::share('channels',Channel::all()); 
+    // }
 }
