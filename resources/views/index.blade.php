@@ -56,7 +56,7 @@
                         <div class="post-thumb">
 
 
-                                        <img src="{{$first_post->featured}}" alt="{{$first_post->title}}">
+                                        <img src="{{$first_post->featured}}" alt="{{$first_post->title}}" style="width:600px;height:100%;">
                                         <div class="overlay"></div>
                                         <a href="{{$first_post->featured}}" class="link-image js-zoom-image">
                                                 <i class="seoicon-zoom"></i>
@@ -92,10 +92,7 @@
                                         <a href="{{route('category.single',['id'=>$first_post->category->id])}}">{{$first_post->category->name}}</a>
                                         </span>
 
-                                        <span class="post__comments">
-                                            <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i></a>
-                                            6
-                                        </span>
+                                        
 
                                     </div>
                             </div>
