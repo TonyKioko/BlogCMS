@@ -95,17 +95,17 @@
 
                                 <li class="list-group-item">
 
-                                <a href="/admin/profiles/{{Auth::user()->id}}/edit">Profile</a>
+                                <a href="/profiles/{{Auth::user()->id}}/edit">Profile</a>
             
                                     </li>
                                     <li class="list-group-item">
 
-                                        <a href="/admin/posts">All Posts</a>
+                                        <a href="/posts">All Posts</a>
             
                                     </li>
                                     <li class="list-group-item">
 
-                                        <a href="/admin/posts/create">Create Post</a>
+                                        <a href="/posts/create">Create Post</a>
             
                                     </li>
 
@@ -113,7 +113,7 @@
                             
                                     <li class="list-group-item">
 
-                                            <a href="/admin/posts/trashed">Trashed Posts</a>
+                                            <a href="/posts/trashed">Trashed Posts</a>
                 
                                         </li>
 
@@ -127,14 +127,14 @@
 
                                             <li class="list-group-item">
 
-                                                    <a href="/admin/users/create">Create User</a>
+                                                    <a href="/users/create">Create User</a>
                         
                                                 </li>
 
                                     @endif
                                 <li class="list-group-item">
 
-                                        <a href="/admin/categories">Categories</a>
+                                        <a href="/categories">Categories</a>
             
                                     </li>
 
@@ -143,21 +143,21 @@
 
                                 <li class="list-group-item">
 
-                                        <a href="/admin/categories/create">Create Category</a>
+                                        <a href="/categories/create">Create Category</a>
             
                                     </li>
 
 
                                     <li class="list-group-item">
 
-                                        <a href="/admin/tags">Tags</a>
+                                        <a href="/tags">Tags</a>
             
                                     </li>
 
 
                                     <li class="list-group-item">
 
-                                        <a href="/admin/tags/create">Create Tag</a>
+                                        <a href="/tags/create">Create Tag</a>
             
                                     </li>
 
@@ -167,7 +167,7 @@
                     @if(Auth::user()->admin)
                     <li class="list-group-item">
 
-                    <a href="/admin/settings">Settings</a>
+                    <a href="/settings">Settings</a>
 
                         </li>
 

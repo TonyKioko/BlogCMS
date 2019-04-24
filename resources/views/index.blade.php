@@ -51,7 +51,7 @@
             <div class="col-lg-2"></div>
             <div class="col-lg-8">
                 <article class="hentry post post-standard has-post-thumbnail sticky">
-
+                    @if($first_post)
                     <a href="{{route('post.single',['slug'=>$first_post->slug])}}">
                         <div class="post-thumb">
 
@@ -102,11 +102,14 @@
                         </div>
 
                 </article>
+            @endif
             </div>
             <div class="col-lg-2"></div>
         </div>
 
         <div class="row">
+        @if($second_post)
+
             <div class="col-lg-6">
                 <article class="hentry post post-standard has-post-thumbnail sticky">
 
@@ -162,6 +165,8 @@
 
                 </article>
             </div>
+            @endif
+            @if($third_post)
             <div class="col-lg-6">
                 <article class="hentry post post-standard has-post-thumbnail sticky">
 
@@ -217,11 +222,14 @@
 
                 </article>
             </div>
+            @endif
+
         </div>
     </div>
 
 
     <div class="container-fluid">
+            @if($Laravel && $Wordpress)
         <div class="row medium-padding120 bg-border-color">
             <div class="container">
                 <div class="col-lg-12">
@@ -294,6 +302,7 @@
             </div>
         </div>
     </div>
+    @endif
 </div>
 
 

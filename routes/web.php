@@ -62,7 +62,7 @@ Route::get('/admin/users/not_admin/{id}', 'UsersController@not_admin')->name('us
 
 
 
-Route::group(['prefix'=>'admin'],function(){
+// Route::group(['prefix'=>'admin'],function(){
 
     Route::resource('posts', 'PostsController');
     Route::resource('categories', 'CategoriesController');
@@ -77,7 +77,7 @@ Route::group(['prefix'=>'admin'],function(){
 
 
     
-});
+// });
 
 
 
