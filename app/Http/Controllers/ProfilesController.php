@@ -115,7 +115,7 @@ class ProfilesController extends Controller
         $user->profile->save();
         Session::flash('success','Profile updated successfully');
 
-        return redirect('/admin/profiles');
+        return redirect('/profiles');
 
 
     }

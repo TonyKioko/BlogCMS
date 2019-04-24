@@ -95,7 +95,7 @@ class PostsController extends Controller
 
         Session::flash('success','Post created successfully');
 
-        return redirect('/admin/posts');
+        return redirect('/posts');
         // return $request->all();
     }
 
@@ -167,7 +167,7 @@ class PostsController extends Controller
         Session::flash('success','Post Updated successfully');
 
 
-        return redirect('/admin/posts');
+        return redirect('/posts');
     }
 
     /**
@@ -182,7 +182,7 @@ class PostsController extends Controller
         $post->delete();
         Session::flash('success','Post deleted');
 
-        return redirect('/admin/posts');
+        return redirect('/posts');
     }
 
     public function trashed(){
@@ -211,7 +211,7 @@ class PostsController extends Controller
         $post->restore();
         Session::flash('success','Post restored');
 
-        return redirect('/admin/posts');
+        return redirect('/posts');
 
     }
 

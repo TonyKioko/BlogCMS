@@ -47,7 +47,7 @@ class CategoriesController extends Controller
             'name'=>request('name')
         ]);
         Session::flash('success','Category Created Successfuly');
-        return redirect('/admin/categories');
+        return redirect('/categories');
         // return $request->all();
     }
 
@@ -96,7 +96,7 @@ class CategoriesController extends Controller
 
 
         $category->save();
-        return redirect('/admin/categories');
+        return redirect('/categories');
 
     }
 
@@ -117,6 +117,6 @@ class CategoriesController extends Controller
         $category->delete();
         Session::flash('success','Category deleted');
 
-        return redirect('/admin/categories');        
+        return redirect('/categories');        
     }
 }

@@ -72,7 +72,7 @@ class UsersController extends Controller
 
         Session::flash('success','User created successfully');
 
-        return redirect('/admin/users');
+        return redirect('/users');
 
 
     }
@@ -123,7 +123,7 @@ class UsersController extends Controller
         $user->profile->delete();
         $user->delete();
         Session::flash('success','User deleted');
-        return redirect('/admin/users');
+        return redirect('/users');
 
     }
 
@@ -136,7 +136,7 @@ class UsersController extends Controller
 
         Session::flash('success','User Permission changed successfully');
 
-        return redirect('/admin/users');
+        return redirect('/users');
 
 
 
