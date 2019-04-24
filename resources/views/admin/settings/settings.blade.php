@@ -10,7 +10,7 @@
 
     <div class="panel-body">
 
-    <form action="/admin/settings/{{$setting->id}}" method="POST" enctype="multipart/form-data">
+    <form action="/settings/{{$setting->id}}" method="POST" enctype="multipart/form-data">
         {{csrf_field()}}
         {{ method_field('PATCH') }}
 

@@ -57,7 +57,7 @@ Edit
 
     <td>
         {{-- <span class="glyphicon glyphicon-pencil"></span> --}}
-        <a href="/admin/posts/{{$post->id}}/edit" class="btn btn-xs btn-info">EDIT
+        <a href="/posts/{{$post->id}}/edit" class="btn btn-xs btn-info">EDIT
         
         </a>
     </td>

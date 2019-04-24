@@ -120,7 +120,7 @@
                                         @if(Auth::user()->admin)
                                         <li class="list-group-item">
 
-                                                <a href="/admin/users">Users</a>
+                                                <a href="/users">Users</a>
                     
                                             </li>
 

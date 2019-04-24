@@ -10,7 +10,7 @@
 
     <div class="panel-body">
 
-        <form action="/admin/categories" method="POST" enctype="multipart/form-data">
+        <form action="/categories" method="POST" enctype="multipart/form-data">
         {{csrf_field()}}
 
         <div class="form-group">

@@ -46,7 +46,7 @@ Delete
 
     <td>
         {{-- <span class="glyphicon glyphicon-pencil"></span> --}}
-        <a href="/admin/tags/{{$tag->id}}/edit" class="btn btn-xs btn-info">EDIT
+        <a href="/tags/{{$tag->id}}/edit" class="btn btn-xs btn-info">EDIT
         
         </a>
     </td>

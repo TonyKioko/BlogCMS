@@ -11,7 +11,7 @@
 
     <div class="panel-body">
 
-        <form action="/admin/posts" method="POST" enctype="multipart/form-data">
+        <form action="/posts" method="POST" enctype="multipart/form-data">
         {{csrf_field()}}
 
         <div class="form-group">

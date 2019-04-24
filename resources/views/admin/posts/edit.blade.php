@@ -9,7 +9,7 @@
 
     <div class="panel-body">
 
-    <form action="/admin/posts/{{$post->id}}" method="POST" enctype="multipart/form-data">
+    <form action="/posts/{{$post->id}}" method="POST" enctype="multipart/form-data">
         {{csrf_field()}}
         {{ method_field('PATCH') }}
         <div class="form-group">
