@@ -19,7 +19,7 @@
                                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                         <div class="case-item">
                                             <div class="case-item__thumb">
-                                            <img src="{{$post->featured}}" alt="our case">
+                                            <img src="https://www.thestar.com.my/~/media/online/2018/09/21/11/01/bbstory2_tm_2.ashx/?w=620&h=413&crop=1&hash=69C3E6BE05EF1940604CB9D3C24DA0BADE7A3609" alt="our case">
                                             </div>
                                         <h6 class="case-item__title"><a href="{{route('post.single',['slug'=>$post->slug])}}">{{$post->title}}</a></h6>
                                         </div>
