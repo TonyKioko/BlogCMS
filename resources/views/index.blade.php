@@ -431,7 +431,6 @@
 <script src="{{ asset('app/js/velocity.min.js')}}"></script>
 <script src="{{ asset('app/js/ScrollMagic.min.js')}}"></script>
 <script src="{{ asset('app/js/animation.velocity.min.js')}}"></script>
-<script src="{{asset('js/summernote.js')}}">
 
 <script src="{{asset('js/toastr.min.js')}}">
 

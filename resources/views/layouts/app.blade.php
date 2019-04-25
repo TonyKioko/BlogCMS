@@ -19,6 +19,7 @@
 
 <link rel="stylesheet" href="{{asset('css/toastr.min.css')}}">
 
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
@@ -199,31 +200,25 @@
 
 
     </div>
-<script src="/js/app.js">
-</script>
-
-
-<script src="{{asset('js/toastr.min.js')}}">
-<script src="{{asset('js/summernote.js')}}">
-
-
-</script>
-
-<script>
-@if(Session::has('success'))
-
-toastr.success("{{Session::get('success')}}")
- 
-@endif
-
-@if(Session::has('info'))
-
-toastr.info("{{Session::get('info')}}")
- 
-@endif
-
-
-</script>
+    <script src="/js/app.js">
+    </script>
+    <script src="{{asset('js/toastr.min.js')}}">
+    </script>
+    <script>
+            @if(Session::has('success'))
+            
+            toastr.success("{{Session::get('success')}}")
+             
+            @endif
+            
+            @if(Session::has('info'))
+            
+            toastr.info("{{Session::get('info')}}")
+             
+            @endif
+            
+            
+    </script>
 
 @yield('scripts')
 
