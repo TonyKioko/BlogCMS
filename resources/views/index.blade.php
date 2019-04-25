@@ -246,6 +246,8 @@
 
                         @foreach($Laravel->posts()->orderBy('created_at','desc')->take(3)->get() as $post)
                         <div class="case-item-wrap">
+                    <a href="{{route('post.single',['slug'=>$post->slug])}}">
+
                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                 <div class="case-item">
                                     <div class="case-item__thumb">
@@ -254,6 +256,9 @@
                                     <h6 class="case-item__title text-center"><a href="#">{{$post->title}}</a></h6>
                                 </div>
                             </div>
+
+                    </a>
+
 
                             
                             @endforeach
@@ -278,6 +283,8 @@
                         <div class="case-item-wrap">
                                 @foreach($Wordpress->posts()->orderBy('created_at','desc')->take(3)->get() as $post)
                                 <div class="case-item-wrap">
+
+                                        <a href="{{route('post.single',['slug'=>$post->slug])}}">
                                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                         <div class="case-item">
                                             <div class="case-item__thumb">
@@ -286,6 +293,8 @@
                                             <h6 class="case-item__title text-center"><a href="#">{{$post->title}}</a></h6>
                                         </div>
                                     </div>
+                    </a>
+
         
                                     
                                     @endforeach
@@ -305,7 +314,7 @@
 
 <!-- Subscribe Form -->
 
-<div class="container-fluid bg-green-color">
+<div class="container-fluid bg-green-color" style="margin-bottom:-120px;">
     <div class="row">
         <div class="container">
             <div class="row">
@@ -315,6 +324,8 @@
                         <form class="subscribe-form" method="post" action="/subscribe">
 
                             {{csrf_field()}}
+
+
                             <input class="email input-standard-grey input-white" name="email" required="required" placeholder="Your Email Address" type="email">
                             <button class="subscr-btn" type="submit">subscribe
                                 <span class="semicircle--right"></span>
@@ -325,7 +336,7 @@
                     </div>
 
                     <div class="images-block">
-                        <img src="{{asset('app/img/subscr-gear.png')}}" alt="gear" class="gear">
+                        <img src="{{ asset('app/img/subscr-gear.png')}}" alt="gear" class="gear">
                         <img src="{{ asset('app/img/subscr1.png')}}" alt="mail" class="mail">
                         <img src="{{ asset('app/img/subscr-mailopen.png')}}" alt="mail" class="mail-2">
                     </div>
@@ -334,6 +345,8 @@
         </div>
     </div>
 </div>
+
+<!-- End Subscribe Form -->
 </div>
 
 
@@ -411,15 +424,15 @@
 <script src="{{ asset('app/js/theme-plugins.js')}}"></script>
 <script src="{{ asset('app/js/main.js')}}"></script>
 <script src="{{ asset('app/js/form-actions.js')}}"></script>
-<script src="{{asset('js/summernote.js')}}">
-
 
 <script src="{{ asset('app/js/velocity.min.js')}}"></script>
 <script src="{{ asset('app/js/ScrollMagic.min.js')}}"></script>
 <script src="{{ asset('app/js/animation.velocity.min.js')}}"></script>
+<script src="{{asset('js/summernote.js')}}">
 
+<script src="{{asset('js/toastr.min.js')}}">
 
-<!-- ...end JS Script -->
+</script>
 
 </body>
 </html>
