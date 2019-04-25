@@ -9,7 +9,7 @@ Clone the repository
 
 Switch to the repo folder
 
-    cd Laravel_Forum
+    cd BlogCMS
 
 ``` bash
 composer install
