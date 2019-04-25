@@ -253,7 +253,10 @@
                                     <div class="case-item__thumb">
                                     <img src="{{$post->featured}}" alt="{{$post->title}}">
                                     </div>
-                                    <h6 class="case-item__title text-center"><a href="#">{{$post->title}}</a></h6>
+                                    <a href="{{route('post.single',['slug'=>$post->slug])}}">
+                                    <h6 class="case-item__title text-center">{{$post->title}}</h6>
+                    </a>
+
                                 </div>
                             </div>
 
@@ -290,7 +293,7 @@
                                             <div class="case-item__thumb">
                                             <img src="{{$post->featured}}" alt="{{$post->title}}">
                                             </div>
-                                            <h6 class="case-item__title text-center"><a href="#">{{$post->title}}</a></h6>
+                                            <h6 class="case-item__title text-center"><a href="{{route('post.single',['slug'=>$post->slug])}}">{{$post->title}}</a></h6>
                                         </div>
                                     </div>
                     </a>
