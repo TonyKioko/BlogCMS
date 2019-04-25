@@ -1,7 +1,7 @@
 <footer class="footer" id="site-footer">
         <div class="container">
             <div class="row">
-                <div class="info">
+                <div class="info" style="padding-top:40px;">
                     <div class="col-lg-6 col-lg-offset-3">
                         <div class="heading text-center">
                             <h3 class="heading-title" >{{$settings->site_name}}</h3>
@@ -54,7 +54,7 @@
                             </div>
                             <div class="content">
                                 <a href="#" class="title">{{$settings->address}}</a>
-                                <p class="sub-title">795 South Park Avenue</p>
+                                <p class="sub-title">Foss Nine Avenue</p>
                             </div>
                         </div>
                     </div>

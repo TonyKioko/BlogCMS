@@ -12,9 +12,9 @@ class SettingsTableSeeder extends Seeder
     public function run()
     {
         \App\Setting::create([
-            'site_name'=>"XYZ Blog",
+            'site_name'=>"FOSS Blog",
             'contact_number'=>'12345678',
-            'contact_email'=>'abc@blog.com',
+            'contact_email'=>'foss@blog.com',
             'address'=>'1234 X Street'
         ]);
     }

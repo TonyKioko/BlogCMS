@@ -56,7 +56,7 @@
                         <div class="post-thumb">
 
 
-                                        <img src="{{$first_post->featured}}" alt="{{$first_post->title}}" style="width:600px;height:100%;">
+                                        <img src="https://www.cloudways.com/blog/wp-content/uploads/2-16.jpg" alt="{{$first_post->title}}" style="width:600px;height:100%;">
                                         <div class="overlay"></div>
                                         <a href="{{$first_post->featured}}" class="link-image js-zoom-image">
                                                 <i class="seoicon-zoom"></i>
@@ -114,7 +114,7 @@
                         <a href="{{route('post.single',['slug'=>$second_post->slug])}}">
 
                         <div class="post-thumb">
-                            <img src="{{$second_post->featured}}" alt="seo">
+                            <img src="https://www.thestar.com.my/~/media/online/2018/09/21/11/01/bbstory2_tm_2.ashx/?w=620&h=413&crop=1&hash=69C3E6BE05EF1940604CB9D3C24DA0BADE7A3609" alt="seo">
                             <div class="overlay"></div>
                             <a href="{{$second_post->featured}}" class="link-image js-zoom-image">
                                 <i class="seoicon-zoom"></i>
@@ -171,7 +171,7 @@
                     <a href="{{route('post.single',['slug'=>$third_post->slug])}}">
 
                         <div class="post-thumb">
-                            <img src="{{$third_post->featured}}" alt="seo">
+                            <img src="https://technews.io/public/storage/Technews%20Events%20and%20Awards%20Deadlines%20%281%29.png" alt="seo" style="height:340px;">
                             <div class="overlay"></div>
                             <a href="{{$third_post->featured}}" class="link-image js-zoom-image">
                                 <i class="seoicon-zoom"></i>
@@ -251,7 +251,7 @@
                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                 <div class="case-item">
                                     <div class="case-item__thumb">
-                                    <img src="{{$post->featured}}" alt="{{$post->title}}">
+                                    <img src="https://corevalue.net/production/wp-content/uploads/2015/11/CoreValue_software.jpg" alt="{{$post->title}}">
                                     </div>
                                     <a href="{{route('post.single',['slug'=>$post->slug])}}">
                                     <h6 class="case-item__title text-center">{{$post->title}}</h6>
@@ -291,7 +291,7 @@
                                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                         <div class="case-item">
                                             <div class="case-item__thumb">
-                                            <img src="{{$post->featured}}" alt="{{$post->title}}">
+                                            <img src="https://pagedesignweb.com/wp-content/uploads/2017/11/SoftDevelopment-1.jpg" alt="{{$post->title}}">
                                             </div>
                                             <h6 class="case-item__title text-center"><a href="{{route('post.single',['slug'=>$post->slug])}}">{{$post->title}}</a></h6>
                                         </div>
